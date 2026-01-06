@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Compatibility Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Love Compatibility Predictor ❤️</h2>
+
+        <!-- ✅ Form starts here -->
+        <form method="POST" class="form-grid">
+
+            <!-- Person A -->
+            <div class="form-card">
+                <h3>Person A</h3>
+                <label>Age:</label>
+                <input type="number" name="ageA" required>
+
+                <label>Sex:</label>
+                <select name="sexA">
+                    <option value="m">Male</option>
+                    <option value="f">Female</option>
+                </select>
+
+                <label>Orientation:</label>
+                <select name="orientationA">
+                    <option value="straight">Straight</option>
+                    <option value="gay">Gay</option>
+                    <option value="bisexual">Bisexual</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label>Diet:</label>
+                <select name="dietA">
+                    <option value="anything">Anything</option>
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="vegan">Vegan</option>
+                    <option value="kosher">Kosher</option>
+                    <option value="halal">Halal</option>
+                </select>
+
+                <label>Drinks:</label>
+                <select name="drinksA">
+                    <option value="not at all">Not at all</option>
+                    <option value="rarely">Rarely</option>
+                    <option value="socially">Socially</option>
+                    <option value="often">Often</option>
+                    <option value="very often">Very often</option>
+                </select>
+
+                <label>Smokes:</label>
+                <select name="smokesA">
+                    <option value="no">No</option>
+                    <option value="sometimes">Sometimes</option>
+                    <option value="yes">Yes</option>
+                </select>
+
+                <label>Religion:</label>
+                <select name="religionA">
+                    <option value="atheist">Atheist</option>
+                    <option value="agnostic">Agnostic</option>
+                    <option value="christian">Christian</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="muslim">Muslim</option>
+                    <option value="jewish">Jewish</option>
+                    <option value="buddhist">Buddhist</option>
+                    <option value="spiritual">Spiritual</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label>Education:</label>
+                <select name="educationA">
+                    <option value="high school">High school</option>
+                    <option value="undergraduate">Undergraduate</option>
+                    <option value="graduate">Graduate</option>
+                    <option value="phd">PhD</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label>Job:</label>
+                <select name="jobA">
+                    <option value="student">Student</option>
+                    <option value="engineer">Engineer</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="artist">Artist</option>
+                    <option value="medicine">Medicine</option>
+                    <option value="law">Law</option>
+                    <option value="business">Business</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label>Pets:</label>
+                <select name="petsA">
+                    <option value="likes dogs">Likes dogs</option>
+                    <option value="likes cats">Likes cats</option>
+                    <option value="has dogs">Has dogs</option>
+                    <option value="has cats">Has cats</option>
+                    <option value="dislikes pets">Dislikes pets</option>
+                </select>
+
+                <label>Essay:</label>
+                <textarea name="essayA"></textarea>
+            </div>
+
+            <!-- Person B -->
+            <div class="form-card">
+                <h3>Person B</h3>
+                <label>Age:</label>
+                <input type="number" name="ageB" required>
+
+                <label>Sex:</label>
+                <select name="sexB">
+                    <option value="m">Male</option>
+                    <option value="f">Female</option>
+                </select>
+
+                <label>Orientation:</label>
+                <select name="orientationB">
+                    <option value="straight">Straight</option>
+                    <option value="gay">Gay</option>
+                    <option value="bisexual">Bisexual</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label>Diet:</label>
+                <select name="dietB">
+                    <option value="anything">Anything</option>
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="vegan">Vegan</option>
+                    <option value="kosher">Kosher</option>
+                    <option value="halal">Halal</option>
+                </select>
+
+                <label>Drinks:</label>
+                <select name="drinksB">
+                    <option value="not at all">Not at all</option>
+                    <option value="rarely">Rarely</option>
+                    <option value="socially">Socially</option>
+                    <option value="often">Often</option>
+                    <option value="very often">Very often</option>
+                </select>
+
+                <label>Smokes:</label>
+                <select name="smokesB">
+                    <option value="no">No</option>
+                    <option value="sometimes">Sometimes</option>
+                    <option value="yes">Yes</option>
+                </select>
+
+                <label>Religion:</label>
+                <select name="religionB">
+                    <option value="atheist">Atheist</option>
+                    <option value="agnostic">Agnostic</option>
+                    <option value="christian">Christian</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="muslim">Muslim</option>
+                    <option value="jewish">Jewish</option>
+                    <option value="buddhist">Buddhist</option>
+                    <option value="spiritual">Spiritual</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label>Education:</label>
+                <select name="educationB">
+                    <option value="high school">High school</option>
+                    <option value="undergraduate">Undergraduate</option>
+                    <option value="graduate">Graduate</option>
+                    <option value="phd">PhD</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label>Job:</label>
+                <select name="jobB">
+                    <option value="student">Student</option>
+                    <option value="engineer">Engineer</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="artist">Artist</option>
+                    <option value="medicine">Medicine</option>
+                    <option value="law">Law</option>
+                    <option value="business">Business</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label>Pets:</label>
+                <select name="petsB">
+                    <option value="likes dogs">Likes dogs</option>
+                    <option value="likes cats">Likes cats</option>
+                    <option value="has dogs">Has dogs</option>
+                    <option value="has cats">Has cats</option>
+                    <option value="dislikes pets">Dislikes pets</option>
+                </select>
+
+                <label>Essay:</label>
+                <textarea name="essayB"></textarea>
+            </div>
+
+            <!-- ✅ Button is INSIDE the form -->
+            <div class="submit-section">
+                <button type="submit">Check Compatibility</button>
+            </div>
+        </form>
+
+        {% if compatibility %}
+            <h2 class="result">Predicted Compatibility: {{ compatibility }}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>
